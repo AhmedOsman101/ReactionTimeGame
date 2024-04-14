@@ -1,27 +1,20 @@
 <template>
 	<div>
-		<!-- <button
-			v-if="!initClick"
-			@click="handleButtonClick"
-			class="bg-green-900 hover:bg-green-700 transition-all duration-[400ms] ease-in-out text-white font-bold py-2 px-4 rounded"
-			:disabled="clicked">
-			Start the Game
-		</button> -->
+		<!-- Start The First Game -->
+		<StartButton v-if="!initClick" @click="ButtonClick" :disabled="clicked">
+			start the game
+		</StartButton>
+
+		<!-- Start a New Game -->
 		<StartButton
-			v-if="!initClick"
-			@click="handleButtonClick"
-			:disabled="clicked">
-			start the game</StartButton
-		>
-		<StartButton
-			v-if="initClick"
-			@click="handleButtonClick"
+			v-show="initClick"
+			@click="ButtonClick"
 			:disabled="clicked">
 			Start a New Game
 		</StartButton>
 	</div>
 
-	<Box v-show="toggle" @BoxClick="handleBoxClick" />
+	<Box v-show="toggle" @BoxClick="BoxClick" />
 
 	<ScoreDisplay v-show="score" :score="score" />
 </template>
@@ -33,14 +26,17 @@ import Box from "./Box.vue";
 import ScoreDisplay from "./ScoreDisplay.vue";
 import StartButton from "./StartButton.vue";
 
+// reactive state
 const initClick = ref(false);
 const toggle = ref(false);
 const clicked = ref(false);
 const score = ref(0);
 
+// defining vars
 let time;
 
-const handleButtonClick = () => {
+// methods
+const ButtonClick = () => {
 	if (initClick.value) score.value = 0;
 	if (toggle.value) return;
 	const randomTime = getRandomInt(1000, 3000);
@@ -50,11 +46,10 @@ const handleButtonClick = () => {
 		time = new Date().getTime();
 	}, randomTime);
 
-	console.log("clicked");
 	clicked.value = !clicked.value;
 };
 
-const handleBoxClick = () => {
+const BoxClick = () => {
 	if (!initClick.value) {
 		initClick.value = true;
 	}

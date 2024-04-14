@@ -20,6 +20,4 @@ const props = defineProps({
 const evaluation = computed(() => {
 	return evaluateScore(props.score);
 });
-
-evaluateScore;
 </script>
