@@ -1,7 +1,36 @@
-# Vue 3 + Vite
+<!-- documentation for the Reaction Time game made with vue3 composition api and tailwind css -->
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+# Reaction Time Game
 
-## Recommended IDE Setup
+This is a simple game that measures how fast your reactions and reflexes are.
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Game idea
+
+-   The game starts when the player clicks the Start Game button.
+-   After that the game shows a green box to the player after a random amount of time.
+-   The player has to click on the box as fast as possible in order for him to achieve a high score
+
+## Technologies Used
+
+I used [Tailwind CSS](https://tailwindcss.com/) for styling. <br>
+**[Vite](https://vitejs.dev/)** for asset bundling. <br>
+**[Vue](https://vuejs.org/)**
+3 [Composition API](https://vuejs.org/api/composition-api-setup.html#composition-api-setup) for the game logic and UI reactivity.
+
+## Game Logic
+
+## Project setup
+
+1. Installing frontend assets
+
+```bash
+npm install
+```
+
+2. Running the app
+
+```bash
+npm run dev
+```
+
+3. Open the app in the browser from **[Here](https://ahmedosman101.github.io/ReactionTimeGame/)**
