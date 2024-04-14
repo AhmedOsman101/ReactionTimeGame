@@ -1,10 +1,11 @@
 <template>
 	<div class="text-center mt-5">
 		<h1>
-			Your Score is: <span class="font-bold">{{ score }}</span>
+			You Clicked it in: <span class="font-bold">{{ score }}</span
+			>ms
 		</h1>
 		<h2>
-			your evaluation is: <span class="font-bold">{{ evaluation }}</span>
+			Your Evaluation is: <span class="font-bold">{{ evaluation }}</span>
 		</h2>
 	</div>
 </template>
