@@ -4,7 +4,7 @@
 
 This is a simple game that measures how fast your reactions and reflexes are.
 
-## Game idea
+## Game Idea
 
 -   The game starts when the player clicks the Start Game button.
 -   After that, the game shows a green box to the player after a random amount of time.
@@ -20,7 +20,7 @@ I've used:
 
 ## Game Logic
 
-### Reactive states
+### Reactive States
 
 1.  The `clicked` property is used to check if the game is in progress or not, to prevent the user from spamming the start new game button, and also to prevent the user from starting a new game while a game is already running.
 
@@ -34,7 +34,7 @@ I've used:
 
     -   The `evaluateScore()` function accepts the score and returns a `string` that's based on the time elapsed.
 
-### How it works
+### How It Works
 
 -   Based on whether it's the first game or not, we show a custom message to start the game or start a new game.
 
@@ -61,7 +61,7 @@ I've used:
 
 -   This cycle repeats for each new game.
 
-## Project setup
+## Project Setup
 
 1. Installing frontend assets
 
