@@ -13,11 +13,11 @@
 import { computed } from "vue";
 import { evaluateScore } from "../lib/Helpers";
 
+// props
 const props = defineProps({
 	score: Number,
 });
-
-const evaluation = computed(() => {
-	return evaluateScore(props.score);
-});
+// add a computed property evaluation to evaluate the player's score
+// the score is based on a scoring system
+const evaluation = computed(() => evaluateScore(props.score));
 </script>
