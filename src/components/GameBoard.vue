@@ -2,7 +2,7 @@
 	<div>
 		<!-- Start The First Game -->
 		<StartButton v-if="!initClick" @click="ButtonClick" :disabled="clicked">
-			start the game
+			Start Game
 		</StartButton>
 
 		<!-- Start a New Game -->
