@@ -18,7 +18,7 @@ I've used:
 -   **[Vite](https://vitejs.dev/)** for asset bundling. <br>
 -   **[Vue](https://vuejs.org/)** 3 **[Composition API](https://vuejs.org/api/composition-api-setup.html)** for the game logic and UI reactivity.
 
-## Game Logic
+## Game's Logic
 
 ### Reactive States
 
