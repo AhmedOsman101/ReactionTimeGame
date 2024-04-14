@@ -33,4 +33,4 @@ npm install
 npm run dev
 ```
 
-3. Open the app in the browser from **[Here](https://ahmedosman101.github.io/ReactionTimeGame/)**
+3. Open the game in the browser from **[Here](https://ahmedosman101.github.io/ReactionTimeGame/)**
